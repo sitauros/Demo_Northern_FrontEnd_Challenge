@@ -49,6 +49,6 @@ function submit_form(){
 
 // Rudimentary email regex check
 function isValidEmailAddress(emailAddress) {
-    var pattern = /^[a-z1-9]+@[a-z1-9]+.[a-z1-9]{2,6}$$/i;
+    var pattern = /^[a-z1-9!#$%&'*+-/=?^_`{|}~]+@[a-z1-9!#$%&'*+-/=?^_`{|}~]+.[a-z1-9]{2,6}$$/i;
     return pattern.test(emailAddress);
 }
